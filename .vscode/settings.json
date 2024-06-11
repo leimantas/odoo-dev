@@ -1,0 +1,38 @@
+{
+  "debug.inlineValues": "on",
+  "debug.toolBarLocation": "docked",
+  "python.languageServer": "Pylance",
+  "pylint.args": ["--load-plugins", "pylint_odoo"],
+  "autopep8.args": ["--max-line-length", "120", "--experimental"],
+
+  "autopep8.interpreter": ["/usr/bin/python3"],
+  "editor.formatOnSave": true,
+  "editor.rulers": [120],
+  "editor.accessibilitySupport": "off",
+  "editor.minimap.enabled": false,
+  "workbench.tips.enabled": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "git.openRepositoryInParentFolders": "always",
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.cache": true,
+    "**/__pycache__": true
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/bin/bash"
+    }
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  }
+}

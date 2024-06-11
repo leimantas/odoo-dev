@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Odoo",
+      "type": "debugpy",
+      "request": "launch",
+      "justMyCode": false,
+      "console": "integratedTerminal",
+      "program": "/usr/bin/odoo",
+      "args": [
+        "--dev=xml",
+        "--config=${cwd}/.devcontainer/odoo.conf",
+        // "--log-handler=odoo.tools.convert:DEBUG",
+        "--update=YOUR_MODULE_NAME"
+        // "--log-level=debug_rpc",
+      ]
+    }
+  ]
+}

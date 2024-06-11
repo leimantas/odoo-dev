@@ -23,7 +23,8 @@
         "mrorz.language-gettext",
         "mikestead.dotenv",
         "ms-python.pylint",
-        "ms-python.autopep8"
+        "ms-python.autopep8",
+        "ms-python.debugpy"
       ]
     }
   },

@@ -1,0 +1,32 @@
+{
+  "name": "ODOO 17 & PostgreSQL 15",
+  "service": "odoo",
+  "dockerComposeFile": "./docker-compose.yml",
+  "workspaceFolder": "/mnt/extra-addons",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "smulyono.reveal",
+        "ms-python.python",
+        "dotjoshjohnson.xml",
+        "codezombiech.gitignore",
+        "donjayamanne.githistory",
+        "shakram02.bash-beautify",
+        "mutantdino.resourcemonitor",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "dannielarriola.extlibraries",
+        "mstuttgart.odoo-snippets",
+        "mechatroner.rainbow-csv",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "mrorz.language-gettext",
+        "mikestead.dotenv",
+        "ms-python.pylint",
+        "ms-python.autopep8"
+      ]
+    }
+  },
+  "remoteUser": "odoo",
+  "shutdownAction": "stopCompose"
+}

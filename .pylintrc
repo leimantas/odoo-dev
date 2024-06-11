@@ -1,0 +1,6 @@
+[MASTER]
+extension-pkg-whitelist=lxml
+
+[FORMAT]
+max-line-length=120
+disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,attribute-string-redundant,protected-access,missing-readme,manifest-required-author,too-many-arguments,abstract-method

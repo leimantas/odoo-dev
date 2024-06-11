@@ -1,0 +1,27 @@
+version: "3.4"
+services:
+  db:
+    image: postgres:15
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+      POSTGRES_DB: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  odoo:
+    image: wbms/odoo-17.0-dev:20240531
+    depends_on:
+      - db
+    ports:
+      - 8069:8069
+    volumes:
+      - ..:/mnt/extra-addons:cached
+      - ./odoo.conf:/etc/odoo/odoo.conf
+      - odoo_data:/var/lib/odoo_dev
+      - dev_extensions:/home/odoo/.vscode-server
+    command: /bin/sh -c "while sleep 1000; do :; done"
+volumes:
+  db_data:
+  odoo_data:
+  dev_extensions:

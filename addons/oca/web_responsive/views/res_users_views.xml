@@ -7,6 +7,8 @@
         <field name="model">res.users</field>
         <field name="arch" type="xml">
             <form>
+                <field name="id" invisible="1"/>
+                <field name="write_date" invisible="1"/>
                 <group>
                     <group>
                         <field name="apps_menu_search_type" string="Search Type" help="Apps Menu Search Type" />

@@ -39,6 +39,6 @@
     "/usr/lib/python3/dist-packages/odoo",
     "/usr/lib/python3/dist-packages/odoo/addons",
     "/mnt/extra-addons/addons/enterprise",
-    "/mnt/extra-addons/addons/spodoo"
+    "/mnt/extra-addons/addons/custom"
   ]
 }

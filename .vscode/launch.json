@@ -6,14 +6,22 @@
       "type": "debugpy",
       "request": "launch",
       "justMyCode": false,
-      "console": "integratedTerminal",
       "program": "/usr/bin/odoo",
+      "console": "integratedTerminal",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "/mnt/extra-addons"
+        },
+        {
+          "localRoot": "${workspaceFolder}/.odoo",
+          "remoteRoot": "/usr/lib/python3/dist-packages/odoo"
+        }
+      ],
       "args": [
         "--dev=xml",
-        "--config=${cwd}/.devcontainer/odoo.conf",
-        // "--log-handler=odoo.tools.convert:DEBUG",
-        "--update=YOUR_MODULE_NAME"
-        // "--log-level=debug_rpc",
+        "--config=${cwd}/.devcontainer/odoo.conf"
+        // "--update=YOUR_MODULE_NAME"
       ]
     }
   ]

@@ -1,10 +1,9 @@
 {
   "debug.inlineValues": "on",
   "debug.toolBarLocation": "docked",
-  "python.languageServer": "Pylance",
+  "debugpy.debugJustMyCode": false,
   "pylint.args": ["--load-plugins", "pylint_odoo"],
   "autopep8.args": ["--max-line-length", "120", "--experimental"],
-
   "autopep8.interpreter": ["/usr/bin/python3"],
   "editor.formatOnSave": true,
   "editor.rulers": [120],
@@ -34,5 +33,12 @@
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.autopep8"
-  }
+  },
+  "python.languageServer": "None",
+  "python.analysis.extraPaths": [
+    "/usr/lib/python3/dist-packages/odoo",
+    "/usr/lib/python3/dist-packages/odoo/addons",
+    "/mnt/extra-addons/addons/enterprise",
+    "/mnt/extra-addons/addons/spodoo"
+  ]
 }
